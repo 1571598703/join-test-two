@@ -1,0 +1,846 @@
+2023-04-15 10:26:47.750 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:27:03.964 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 40041942ms
+2023-04-15 10:28:03.973 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 10:29:03.981 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 10:30:03.611 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 10:30:03.986 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 10:30:17.798 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:31:03.988 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 10:32:04.002 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 10:32:33.707 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status DOWN (replication=false)
+2023-04-15 10:32:34.238 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status DOWN (replication=true)
+2023-04-15 10:32:39.190 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status DOWN (replication=false)
+2023-04-15 10:32:39.216 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application DOUDING-EUREKA with eureka with status DOWN
+2023-04-15 10:32:39.253 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 10:32:39.284 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status DOWN (replication=false)
+2023-04-15 10:32:39.333 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status DOWN (replication=false)
+2023-04-15 10:32:39.559 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :83   [32m        [0;39m Shutting down Eureka Server..
+2023-04-15 10:32:39.562 INFO  com.netflix.eureka.DefaultEurekaServerContext     :79   [32m        [0;39m Shutting down ...
+2023-04-15 10:32:39.563 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2023-04-15 10:32:39.564 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2023-04-15 10:32:39.565 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2023-04-15 10:32:39.565 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2023-04-15 10:32:39.575 INFO  com.netflix.eureka.DefaultEurekaServerContext     :84   [32m        [0;39m Shut down
+2023-04-15 10:32:39.575 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :93   [32m        [0;39m Eureka Service is now shutdown...
+2023-04-15 10:32:39.576 INFO  com.netflix.eureka.DefaultEurekaServerContext     :79   [32m        [0;39m Shutting down ...
+2023-04-15 10:32:39.580 INFO  com.netflix.eureka.DefaultEurekaServerContext     :84   [32m        [0;39m Shut down
+2023-04-15 10:32:39.588 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-15 10:32:39.589 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
+2023-04-15 10:32:50.384 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-15 10:32:50.393 INFO  com.douding.EurekaApplication                     :55   [32m        [0;39m Starting EurekaApplication using Java 11.0.16.1 on LAPTOP-DPE4UH7M with PID 28632 (C:\Users\master\Desktop\guli-parent-master\join-test-two\DouDing\douding-eureka\target\classes started by master in C:\Users\master\Desktop\guli-parent-master\join-test-two)
+2023-04-15 10:32:50.395 INFO  com.douding.EurekaApplication                     :659  [32m        [0;39m No active profile set, falling back to default profiles: default
+2023-04-15 10:32:52.287 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=22aef32b-6694-37e5-ac0c-88b027b6c8a3
+2023-04-15 10:32:52.822 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 8761 (http)
+2023-04-15 10:32:52.847 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-8761"]
+2023-04-15 10:32:52.849 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-15 10:32:52.849 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-15 10:32:53.130 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-15 10:32:53.131 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 2639 ms
+2023-04-15 10:32:54.064 INFO  c.s.j.server.impl.application.WebApplicationImpl  :815  [32m        [0;39m Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-04-15 10:32:54.164 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2023-04-15 10:32:54.164 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2023-04-15 10:32:54.408 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2023-04-15 10:32:54.408 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2023-04-15 10:32:57.581 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-15 10:32:59.572 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-15 10:32:59.587 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:87   [32m        [0;39m Eureka HTTP Client uses Jersey
+2023-04-15 10:32:59.753 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-15 10:32:59.807 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-15 10:32:59.868 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-15 10:32:59.868 INFO  com.netflix.discovery.DiscoveryClient             :375  [32m        [0;39m Client configured to neither register nor query for data.
+2023-04-15 10:32:59.882 INFO  com.netflix.discovery.DiscoveryClient             :390  [32m        [0;39m Discovery Client initialized at timestamp 1681525979878 with initial instances count: 0
+2023-04-15 10:32:59.957 INFO  com.netflix.eureka.DefaultEurekaServerContext     :66   [32m        [0;39m Initializing ...
+2023-04-15 10:32:59.961 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :187  [32m        [0;39m Adding new peer nodes [http://domain-eureka:8761/eureka/]
+2023-04-15 10:33:00.347 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2023-04-15 10:33:00.348 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2023-04-15 10:33:00.349 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2023-04-15 10:33:00.350 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2023-04-15 10:33:00.704 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :109  [32m        [0;39m Replica node URL:  http://domain-eureka:8761/eureka/
+2023-04-15 10:33:00.718 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:153  [32m        [0;39m Finished initializing remote region registries. All known remote regions: []
+2023-04-15 10:33:00.720 INFO  com.netflix.eureka.DefaultEurekaServerContext     :73   [32m        [0;39m Initialized
+2023-04-15 10:33:00.737 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-15 10:33:00.885 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application DOUDING-EUREKA with eureka with status UP
+2023-04-15 10:33:00.888 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :97   [32m        [0;39m Setting the eureka configuration..
+2023-04-15 10:33:00.888 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-8761"]
+2023-04-15 10:33:00.902 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :148  [32m        [0;39m isAws returned false
+2023-04-15 10:33:00.903 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :114  [32m        [0;39m Initialized server context
+2023-04-15 10:33:00.903 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :244  [32m        [0;39m Got 1 instances from neighboring DS node
+2023-04-15 10:33:00.904 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :245  [32m        [0;39m Renew threshold is: 1
+2023-04-15 10:33:00.904 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :256  [32m        [0;39m Changing status to UP
+2023-04-15 10:33:00.914 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration  :69   [32m        [0;39m Started Eureka Server
+2023-04-15 10:33:00.932 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 8761 (http) with context path ''
+2023-04-15 10:33:00.933 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 8761
+2023-04-15 10:33:02.409 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-15 10:33:02.439 INFO  com.douding.EurekaApplication                     :61   [32m        [0;39m Started EurekaApplication in 14.718 seconds (JVM running for 16.695)
+2023-04-15 10:33:02.452 INFO  com.douding.EurekaApplication                     :21   [32m        [0;39m 启动成功！！
+2023-04-15 10:33:02.452 INFO  com.douding.EurekaApplication                     :22   [32m        [0;39m Eureka地址: 	http://127.0.0.1:8761
+2023-04-15 10:33:03.542 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-15 10:33:03.543 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-15 10:33:03.547 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 3 ms
+2023-04-15 10:33:07.819 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status UP (replication=false)
+2023-04-15 10:33:08.410 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status UP (replication=true)
+2023-04-15 10:33:15.804 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=false)
+2023-04-15 10:33:16.342 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=true)
+2023-04-15 10:34:00.920 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 10:35:00.921 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 10:36:00.934 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 10:37:00.939 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 10:38:00.947 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 10:39:00.954 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 10:40:00.965 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 10:41:00.975 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 10:42:00.986 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 10:43:00.989 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 10:44:01.001 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 10:45:01.006 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 10:46:01.016 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 10:47:01.021 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 10:48:00.722 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 5
+2023-04-15 10:48:01.032 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 10:48:59.023 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:49:01.038 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 10:49:07.155 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status UP (replication=false)
+2023-04-15 10:49:07.687 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status UP (replication=true)
+2023-04-15 10:49:09.153 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status UP (replication=false)
+2023-04-15 10:49:09.161 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status UP (replication=false)
+2023-04-15 10:49:09.191 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status UP (replication=true)
+2023-04-15 10:49:09.191 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status UP (replication=true)
+2023-04-15 10:49:30.278 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:50:01.045 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 10:51:01.050 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 10:52:01.058 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 10:52:30.294 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:52:32.756 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status DOWN (replication=false)
+2023-04-15 10:52:32.805 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application DOUDING-EUREKA with eureka with status DOWN
+2023-04-15 10:52:32.850 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 10:52:32.881 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status DOWN (replication=false)
+2023-04-15 10:52:32.914 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status DOWN (replication=false)
+2023-04-15 10:52:32.975 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status DOWN (replication=false)
+2023-04-15 10:52:33.128 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :83   [32m        [0;39m Shutting down Eureka Server..
+2023-04-15 10:52:33.134 INFO  com.netflix.eureka.DefaultEurekaServerContext     :79   [32m        [0;39m Shutting down ...
+2023-04-15 10:52:33.135 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2023-04-15 10:52:33.137 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2023-04-15 10:52:33.137 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2023-04-15 10:52:33.138 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2023-04-15 10:52:33.149 INFO  com.netflix.eureka.DefaultEurekaServerContext     :84   [32m        [0;39m Shut down
+2023-04-15 10:52:33.149 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :93   [32m        [0;39m Eureka Service is now shutdown...
+2023-04-15 10:52:33.150 INFO  com.netflix.eureka.DefaultEurekaServerContext     :79   [32m        [0;39m Shutting down ...
+2023-04-15 10:52:33.157 INFO  com.netflix.eureka.DefaultEurekaServerContext     :84   [32m        [0;39m Shut down
+2023-04-15 10:52:33.171 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-15 10:52:33.173 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
+2023-04-15 10:52:40.450 INFO  com.douding.EurekaApplication                     :55   [32m        [0;39m Starting EurekaApplication using Java 11.0.16.1 on LAPTOP-DPE4UH7M with PID 17096 (C:\Users\master\Desktop\guli-parent-master\join-test-two\DouDing\douding-eureka\target\classes started by master in C:\Users\master\Desktop\guli-parent-master\join-test-two)
+2023-04-15 10:52:40.450 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-15 10:52:40.458 INFO  com.douding.EurekaApplication                     :659  [32m        [0;39m No active profile set, falling back to default profiles: default
+2023-04-15 10:52:42.008 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=22aef32b-6694-37e5-ac0c-88b027b6c8a3
+2023-04-15 10:52:42.621 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 8761 (http)
+2023-04-15 10:52:42.638 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-8761"]
+2023-04-15 10:52:42.638 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-15 10:52:42.639 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-15 10:52:42.838 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-15 10:52:42.838 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 2316 ms
+2023-04-15 10:52:43.320 INFO  c.s.j.server.impl.application.WebApplicationImpl  :815  [32m        [0;39m Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-04-15 10:52:43.381 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2023-04-15 10:52:43.382 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2023-04-15 10:52:43.543 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2023-04-15 10:52:43.543 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2023-04-15 10:52:45.724 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-15 10:52:47.541 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-15 10:52:47.553 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:87   [32m        [0;39m Eureka HTTP Client uses Jersey
+2023-04-15 10:52:47.607 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-15 10:52:47.625 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-15 10:52:47.657 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-15 10:52:47.658 INFO  com.netflix.discovery.DiscoveryClient             :375  [32m        [0;39m Client configured to neither register nor query for data.
+2023-04-15 10:52:47.665 INFO  com.netflix.discovery.DiscoveryClient             :390  [32m        [0;39m Discovery Client initialized at timestamp 1681527167663 with initial instances count: 0
+2023-04-15 10:52:47.704 INFO  com.netflix.eureka.DefaultEurekaServerContext     :66   [32m        [0;39m Initializing ...
+2023-04-15 10:52:47.706 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :187  [32m        [0;39m Adding new peer nodes [http://domain-eureka:8761/eureka/]
+2023-04-15 10:52:48.003 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2023-04-15 10:52:48.004 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2023-04-15 10:52:48.005 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2023-04-15 10:52:48.005 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2023-04-15 10:52:48.303 INFO  com.netflix.eureka.cluster.PeerEurekaNodes        :109  [32m        [0;39m Replica node URL:  http://domain-eureka:8761/eureka/
+2023-04-15 10:52:48.323 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:153  [32m        [0;39m Finished initializing remote region registries. All known remote regions: []
+2023-04-15 10:52:48.324 INFO  com.netflix.eureka.DefaultEurekaServerContext     :73   [32m        [0;39m Initialized
+2023-04-15 10:52:48.377 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-15 10:52:48.564 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application DOUDING-EUREKA with eureka with status UP
+2023-04-15 10:52:48.569 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-8761"]
+2023-04-15 10:52:48.569 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :97   [32m        [0;39m Setting the eureka configuration..
+2023-04-15 10:52:48.592 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :148  [32m        [0;39m isAws returned false
+2023-04-15 10:52:48.596 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :114  [32m        [0;39m Initialized server context
+2023-04-15 10:52:48.597 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :244  [32m        [0;39m Got 1 instances from neighboring DS node
+2023-04-15 10:52:48.597 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :245  [32m        [0;39m Renew threshold is: 1
+2023-04-15 10:52:48.598 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :256  [32m        [0;39m Changing status to UP
+2023-04-15 10:52:48.617 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration  :69   [32m        [0;39m Started Eureka Server
+2023-04-15 10:52:48.635 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 8761 (http) with context path ''
+2023-04-15 10:52:48.637 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 8761
+2023-04-15 10:52:50.355 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-15 10:52:50.371 INFO  com.douding.EurekaApplication                     :61   [32m        [0;39m Started EurekaApplication in 11.944 seconds (JVM running for 14.728)
+2023-04-15 10:52:50.378 INFO  com.douding.EurekaApplication                     :21   [32m        [0;39m 启动成功！！
+2023-04-15 10:52:50.378 INFO  com.douding.EurekaApplication                     :22   [32m        [0;39m Eureka地址: 	http://127.0.0.1:8761
+2023-04-15 10:52:51.138 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-15 10:52:51.139 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-15 10:52:51.143 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 4 ms
+2023-04-15 10:52:56.881 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status UP (replication=false)
+2023-04-15 10:52:57.484 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status UP (replication=true)
+2023-04-15 10:52:58.789 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:53:05.729 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=false)
+2023-04-15 10:53:06.269 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=true)
+2023-04-15 10:53:07.645 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status UP (replication=false)
+2023-04-15 10:53:08.175 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-GATEWAY/localhost:douding-gateway:9000 with status UP (replication=true)
+2023-04-15 10:53:09.575 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status UP (replication=false)
+2023-04-15 10:53:10.108 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status UP (replication=true)
+2023-04-15 10:53:30.008 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:53:36.702 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status UP (replication=false)
+2023-04-15 10:53:37.242 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status UP (replication=true)
+2023-04-15 10:53:48.612 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 10:54:00.026 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:54:48.626 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 10:55:48.628 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 10:56:48.629 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 10:57:00.097 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 10:57:48.636 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 10:58:48.651 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 10:59:48.653 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:00:00.152 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:00:48.660 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 11:01:48.671 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 11:02:48.675 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 11:03:00.195 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:03:48.686 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 11:04:48.698 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 11:05:48.699 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:06:00.238 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:06:48.700 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:07:48.328 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 11:07:48.700 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 11:08:48.713 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 11:09:00.279 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:09:48.715 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:10:48.717 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:11:48.728 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 11:12:00.326 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:12:48.744 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 11:13:48.757 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 11:14:48.771 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 11:15:00.372 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:15:48.785 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 11:16:48.801 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 11:16:59.047 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 11:16:59.568 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=true)
+2023-04-15 11:17:00.400 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:17:02.343 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/localhost:api-file:9003 (replication=false)
+2023-04-15 11:17:02.873 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/localhost:api-file:9003
+2023-04-15 11:17:02.873 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - localhost:api-file:9003
+2023-04-15 11:17:02.874 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/localhost:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 11:17:02.874 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/localhost:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 11:17:19.040 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=false)
+2023-04-15 11:17:19.570 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=true)
+2023-04-15 11:17:30.409 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:17:48.811 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 11:18:48.819 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 11:19:48.835 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 11:20:30.469 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:20:48.843 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 11:21:48.857 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 11:22:48.331 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 11:22:48.860 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 11:23:30.514 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:23:48.868 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 11:24:48.878 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 11:25:48.890 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 11:26:30.551 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:26:48.891 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:27:48.907 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 11:27:54.835 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 11:27:55.354 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=true)
+2023-04-15 11:27:58.133 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/localhost:api-file:9003 (replication=false)
+2023-04-15 11:27:58.663 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/localhost:api-file:9003
+2023-04-15 11:27:58.664 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - localhost:api-file:9003
+2023-04-15 11:27:58.667 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/localhost:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 11:27:58.668 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/localhost:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 11:28:00.585 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:28:13.950 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=false)
+2023-04-15 11:28:14.485 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=true)
+2023-04-15 11:28:30.591 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:28:48.908 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:29:48.921 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 11:30:48.929 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 11:31:30.642 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:31:48.937 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 11:32:48.937 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 11:33:48.953 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 11:34:30.688 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:34:48.958 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 11:35:48.968 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 11:36:48.976 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 11:37:30.735 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:37:48.345 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 11:37:48.989 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 11:38:48.994 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 11:39:26.216 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 11:39:26.751 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=true)
+2023-04-15 11:39:29.557 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/localhost:api-file:9003 (replication=false)
+2023-04-15 11:39:30.009 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/localhost:api-file:9003
+2023-04-15 11:39:30.009 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - localhost:api-file:9003
+2023-04-15 11:39:30.010 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/localhost:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 11:39:30.010 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/localhost:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 11:39:30.765 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:39:45.454 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=false)
+2023-04-15 11:39:45.980 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=true)
+2023-04-15 11:39:49.004 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 11:40:00.774 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:40:49.007 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 11:41:49.022 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 11:42:49.024 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 11:43:00.843 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:43:49.028 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 11:44:49.032 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 11:45:49.038 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 11:46:00.902 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:46:49.052 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 11:47:49.054 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:48:49.056 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 11:49:00.945 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:49:49.057 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 11:50:49.061 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 11:51:49.073 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 11:52:01.008 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:52:48.360 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 11:52:49.074 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 11:53:49.077 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 11:54:49.077 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 11:55:01.051 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:55:49.088 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 11:56:49.095 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 11:57:49.104 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 11:58:01.074 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 11:58:49.119 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 11:59:49.133 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 12:00:49.142 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 12:01:01.119 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:01:49.151 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 12:02:49.153 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 12:03:49.162 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 12:04:01.172 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:04:49.173 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 12:05:49.176 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 12:06:49.180 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 12:07:01.222 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:07:48.362 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 12:07:49.194 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 12:08:49.214 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 19ms
+2023-04-15 12:09:49.228 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 12:10:01.254 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:10:49.229 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 12:11:49.232 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 12:12:49.236 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 12:13:01.293 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:13:49.251 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 12:14:49.261 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 12:15:49.265 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 12:16:01.331 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:16:49.267 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 12:17:49.272 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 12:18:49.277 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 12:19:01.367 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:19:49.286 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 12:20:49.293 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 12:21:49.294 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 12:22:01.399 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:22:48.372 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 12:22:49.310 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 12:23:49.315 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 12:24:49.324 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 12:25:01.435 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:25:46.653 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 12:25:47.185 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=true)
+2023-04-15 12:25:49.326 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 12:25:49.997 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/localhost:api-file:9003 (replication=false)
+2023-04-15 12:25:50.527 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/localhost:api-file:9003
+2023-04-15 12:25:50.528 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - localhost:api-file:9003
+2023-04-15 12:25:50.530 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/localhost:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 12:25:50.531 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/localhost:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 12:26:01.449 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:26:06.592 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=false)
+2023-04-15 12:26:07.134 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status UP (replication=true)
+2023-04-15 12:26:31.458 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:26:49.341 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 12:27:49.348 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 12:28:49.353 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 12:29:31.505 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:29:49.358 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 12:30:49.362 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 12:31:49.374 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 12:32:31.539 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:32:49.382 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 12:33:49.389 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 12:34:49.400 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 12:35:31.577 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:35:49.402 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 12:36:49.411 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 12:37:48.380 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 12:37:49.421 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 12:38:31.618 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:38:49.422 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 12:39:49.423 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 12:40:49.431 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 12:41:31.645 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:41:49.434 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 12:42:49.446 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 12:43:49.455 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 12:44:31.685 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:44:49.469 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 12:45:49.473 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 12:46:49.488 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 12:47:31.735 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:47:49.492 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 12:48:49.492 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 12:49:49.497 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 12:50:31.787 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:50:49.507 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 12:51:49.516 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 12:52:48.383 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 12:52:49.521 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 12:53:31.822 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:53:49.531 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 12:54:49.532 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 12:55:49.538 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 12:56:31.860 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:56:49.549 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 12:57:49.550 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 12:58:49.558 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 12:59:31.919 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 12:59:49.570 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 13:00:49.572 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 13:01:49.588 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 13:02:31.996 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:02:49.602 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:03:49.609 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 13:04:49.612 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 13:05:32.052 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:05:49.613 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 13:06:49.622 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 13:07:48.383 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 13:07:49.631 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 13:08:32.083 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:08:49.637 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 13:09:49.647 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 13:10:49.657 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 13:11:32.137 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:11:49.659 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 13:12:49.671 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 13:13:49.685 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:14:32.162 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:14:49.689 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 13:15:49.701 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 13:16:49.715 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:17:32.195 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:17:49.723 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 13:18:49.735 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 13:19:49.745 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 13:20:32.234 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:20:49.755 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 13:20:55.304 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=false)
+2023-04-15 13:20:55.822 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/localhost:api-file:9003 with status DOWN (replication=true)
+2023-04-15 13:20:58.617 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/localhost:api-file:9003 (replication=false)
+2023-04-15 13:20:59.142 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/localhost:api-file:9003
+2023-04-15 13:20:59.143 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - localhost:api-file:9003
+2023-04-15 13:20:59.147 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/localhost:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 13:20:59.148 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/localhost:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 13:21:02.242 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:21:10.999 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=false)
+2023-04-15 13:21:11.539 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=true)
+2023-04-15 13:21:32.254 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:21:49.759 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 13:22:48.408 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 13:22:49.762 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 13:23:49.768 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:24:32.307 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:24:49.782 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 13:25:49.791 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 13:26:49.806 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:27:32.343 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:27:49.813 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 13:28:49.816 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 13:29:49.820 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 13:30:32.404 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:30:49.827 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:31:49.840 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 13:32:49.848 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 13:33:32.449 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:33:49.855 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 13:34:49.862 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:35:49.867 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 13:36:32.494 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:36:49.872 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 13:37:48.408 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 13:37:49.886 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 13:38:49.896 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 13:39:32.552 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:39:49.903 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:40:49.909 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:41:49.920 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 13:42:32.613 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:42:49.934 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:43:49.940 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:44:49.941 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 13:45:32.672 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:45:49.954 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 13:46:49.959 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 13:47:49.972 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 13:48:32.701 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:48:49.979 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:49:49.980 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 13:50:49.988 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 13:51:23.545 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status DOWN (replication=false)
+2023-04-15 13:51:24.069 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/localhost:api-business:9002 with status DOWN (replication=true)
+2023-04-15 13:51:26.934 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-BUSINESS/localhost:api-business:9002 (replication=false)
+2023-04-15 13:51:27.465 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-BUSINESS/localhost:api-business:9002
+2023-04-15 13:51:27.466 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-BUSINESS - localhost:api-business:9002
+2023-04-15 13:51:27.468 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-BUSINESS/localhost:api-business:9002:Cancel@domain-eureka failed with response code 404
+2023-04-15 13:51:27.468 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-BUSINESS/localhost:api-business:9002:Cancel@domain-eureka: missing entry.
+2023-04-15 13:51:30.840 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=false)
+2023-04-15 13:51:30.976 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status DOWN (replication=false)
+2023-04-15 13:51:31.367 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=true)
+2023-04-15 13:51:31.367 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/localhost:api-system:9001 with status DOWN (replication=true)
+2023-04-15 13:51:32.744 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:51:34.164 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 (replication=false)
+2023-04-15 13:51:34.567 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-SYSTEM/localhost:api-system:9001 (replication=false)
+2023-04-15 13:51:34.692 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 13:51:34.692 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 13:51:34.692 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-SYSTEM/localhost:api-system:9001
+2023-04-15 13:51:34.693 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-SYSTEM - localhost:api-system:9001
+2023-04-15 13:51:34.693 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 13:51:34.693 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 13:51:34.694 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-SYSTEM/localhost:api-system:9001:Cancel@domain-eureka failed with response code 404
+2023-04-15 13:51:34.694 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-SYSTEM/localhost:api-system:9001:Cancel@domain-eureka: missing entry.
+2023-04-15 13:51:37.813 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=false)
+2023-04-15 13:51:38.309 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status UP (replication=false)
+2023-04-15 13:51:38.336 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=true)
+2023-04-15 13:51:38.337 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status UP (replication=true)
+2023-04-15 13:51:38.375 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=false)
+2023-04-15 13:51:38.871 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status DOWN (replication=false)
+2023-04-15 13:51:38.895 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=true)
+2023-04-15 13:51:38.895 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status DOWN (replication=true)
+2023-04-15 13:51:40.278 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/LAPTOP-DPE4UH7M:api-business:9002 with status UP (replication=false)
+2023-04-15 13:51:40.822 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/LAPTOP-DPE4UH7M:api-business:9002 with status UP (replication=true)
+2023-04-15 13:51:41.679 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 (replication=false)
+2023-04-15 13:51:42.150 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 (replication=false)
+2023-04-15 13:51:42.199 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 13:51:42.200 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 13:51:42.200 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001
+2023-04-15 13:51:42.201 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-SYSTEM - LAPTOP-DPE4UH7M:api-system:9001
+2023-04-15 13:51:42.202 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 13:51:42.202 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 13:51:42.202 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001:Cancel@domain-eureka failed with response code 404
+2023-04-15 13:51:42.203 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001:Cancel@domain-eureka: missing entry.
+2023-04-15 13:51:46.108 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=false)
+2023-04-15 13:51:46.242 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status UP (replication=false)
+2023-04-15 13:51:46.623 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=true)
+2023-04-15 13:51:46.623 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status UP (replication=true)
+2023-04-15 13:51:50.002 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:52:02.749 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:52:48.417 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 13:52:50.015 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 13:53:50.015 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 13:54:50.021 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 13:55:02.779 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:55:50.031 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 13:56:50.046 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 13:57:50.053 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 13:58:02.821 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 13:58:50.063 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 13:59:50.072 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:00:50.083 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 14:01:02.868 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:01:50.089 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:02:50.100 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 14:03:50.108 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 14:04:02.917 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:04:50.114 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:05:50.125 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 14:06:50.136 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 14:07:02.972 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:07:48.434 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 14:07:50.140 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 14:08:50.152 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 14:09:50.167 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 14:10:03.014 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:10:50.174 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:11:50.180 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:12:50.192 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 14:13:03.050 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:13:50.201 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 14:14:50.208 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:15:50.222 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 14:16:03.110 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:16:50.237 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 14:17:50.245 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:18:50.253 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 14:19:03.156 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:19:15.166 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=false)
+2023-04-15 14:19:15.686 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=true)
+2023-04-15 14:19:18.400 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 (replication=false)
+2023-04-15 14:19:18.412 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:360  [32m        [0;39m DS: Registry: lease doesn't exist, registering resource: API-FILE - LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 14:19:18.413 WARN  com.netflix.eureka.resources.InstanceResource     :116  [32m        [0;39m Not Found (Renew): API-FILE - LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 14:19:18.419 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Heartbeat@domain-eureka failed with response code 404
+2023-04-15 14:19:18.420 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :212  [32m        [0;39m API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Heartbeat@domain-eureka: missing entry.
+2023-04-15 14:19:18.422 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :214  [32m        [0;39m API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Heartbeat@domain-eureka: cannot find instance id LAPTOP-DPE4UH7M:api-file:9003 and hence replicating the instance with status DOWN
+2023-04-15 14:19:18.926 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 14:19:18.927 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 14:19:18.928 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=true)
+2023-04-15 14:19:18.930 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 14:19:18.931 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 14:19:31.383 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=false)
+2023-04-15 14:19:31.924 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=true)
+2023-04-15 14:19:33.169 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:19:50.262 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:20:50.267 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 14:21:31.148 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=false)
+2023-04-15 14:21:31.676 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=true)
+2023-04-15 14:21:33.189 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:21:34.440 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:328  [32m        [0;39m Cancelled instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 (replication=false)
+2023-04-15 14:21:34.968 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:313  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: API-FILE/LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 14:21:34.969 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): API-FILE - LAPTOP-DPE4UH7M:api-file:9003
+2023-04-15 14:21:34.970 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka failed with response code 404
+2023-04-15 14:21:34.970 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m API-FILE/LAPTOP-DPE4UH7M:api-file:9003:Cancel@domain-eureka: missing entry.
+2023-04-15 14:21:46.914 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=false)
+2023-04-15 14:21:47.443 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status UP (replication=true)
+2023-04-15 14:21:50.273 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:22:03.191 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:22:48.438 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 14:22:50.288 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 14:23:50.301 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 14:24:50.314 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 14:25:03.238 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:25:50.326 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 14:26:50.341 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 14:27:50.346 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 14:28:03.295 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:28:50.353 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:29:50.353 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 14:30:50.364 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 14:31:03.342 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:31:50.367 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 14:32:50.369 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 14:33:50.383 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 14:34:03.388 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:34:50.391 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 14:35:50.394 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 14:36:50.399 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 14:37:03.443 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:37:48.448 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 14:37:50.412 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 14:38:50.414 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 14:39:50.415 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 14:40:03.488 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:40:50.426 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 14:41:50.435 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:42:50.440 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 14:43:03.540 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:43:50.455 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 14:44:50.457 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 14:45:50.471 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 14:46:03.590 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:46:50.477 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:47:50.485 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 14:48:50.493 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 14:49:03.656 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:49:50.498 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 14:50:50.509 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:51:50.520 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 14:52:03.727 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:52:48.457 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 14:52:50.525 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 14:53:50.527 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 14:54:50.530 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 14:55:03.771 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:55:50.540 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:56:50.550 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 14:57:50.560 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 14:58:03.809 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 14:58:50.566 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 14:59:50.574 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:00:50.587 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 15:01:03.864 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:01:50.602 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 15:02:50.613 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 15:03:50.617 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 15:04:03.889 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:04:50.622 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 15:05:50.626 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 15:06:50.640 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 15:07:03.931 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:07:48.469 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 15:07:50.648 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 15:08:50.658 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 15:09:50.659 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 15:10:03.976 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:10:50.672 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 15:11:50.686 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 15:12:50.700 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 15:13:04.026 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:13:50.710 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 15:14:50.710 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 15:15:50.711 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 15:16:04.070 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:16:50.714 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 15:17:50.723 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 15:18:50.733 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 15:19:04.127 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:19:50.743 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 15:20:50.757 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 15:21:50.765 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:22:04.171 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:22:48.478 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 15:22:50.767 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 15:23:50.774 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:24:50.780 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 15:25:04.219 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:25:50.791 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 15:26:50.794 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 15:27:50.799 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 15:28:04.253 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:28:50.810 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 15:29:50.817 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:30:50.819 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 15:31:04.299 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:31:50.823 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 15:32:50.829 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 15:33:50.837 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:34:04.356 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:34:50.844 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 15:35:50.859 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 15:36:50.872 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 15:37:04.436 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:37:48.490 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 15:37:50.884 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 15:38:50.889 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 15:39:50.903 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 15:40:04.491 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:40:50.905 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 2ms
+2023-04-15 15:41:50.918 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 15:42:50.921 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 15:43:04.550 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:43:50.935 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 15:44:50.947 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 12ms
+2023-04-15 15:45:50.948 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 15:46:04.599 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:46:50.955 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:47:50.960 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 15:48:50.972 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 15:49:04.658 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:49:50.980 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:50:50.986 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 15:51:50.988 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 15:52:04.697 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:52:48.500 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 15:52:50.995 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 15:53:51.008 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 15:54:51.019 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 15:55:04.752 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:55:51.027 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 15:56:51.032 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 15:57:51.046 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 15:58:04.792 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 15:58:51.060 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 15:59:51.072 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 16:00:51.081 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 16:01:04.845 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:01:51.095 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 16:02:51.108 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 16:03:51.117 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 16:04:04.882 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:04:51.125 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 16:05:51.130 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 16:06:51.144 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 16:07:04.920 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:07:48.505 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 16:07:51.148 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 16:08:51.149 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 16:09:51.153 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 4ms
+2023-04-15 16:10:04.978 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:10:51.155 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 16:11:51.163 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 16:12:51.168 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:13:05.030 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:13:51.175 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 16:14:51.181 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:15:51.187 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:16:05.066 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:16:51.195 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 16:17:51.211 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 16ms
+2023-04-15 16:18:51.222 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 16:19:05.116 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:19:51.237 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 16:20:51.245 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 16:21:51.246 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 16:22:05.146 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:22:48.507 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 16:22:51.257 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 16:23:51.264 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 16:24:51.264 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 16:25:05.192 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:25:51.275 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 11ms
+2023-04-15 16:26:51.279 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 16:27:51.294 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 15ms
+2023-04-15 16:28:05.253 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:28:51.300 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 16:29:51.301 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 16:30:51.314 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 16:31:05.295 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:31:51.315 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 16:32:51.320 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:33:51.322 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 16:34:05.329 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:34:51.323 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 16:35:51.337 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 16:36:51.341 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 16:37:05.371 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:37:48.514 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 16:37:51.346 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:38:51.350 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 16:39:51.359 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 9ms
+2023-04-15 16:40:05.433 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:40:51.373 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 16:41:51.381 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 7ms
+2023-04-15 16:42:51.395 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 16:43:05.476 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:43:51.405 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 16:44:51.412 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 6ms
+2023-04-15 16:45:51.426 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 14ms
+2023-04-15 16:46:05.532 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:46:51.431 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:47:51.444 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 13ms
+2023-04-15 16:48:51.450 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:49:05.560 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:49:51.453 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 3ms
+2023-04-15 16:50:51.459 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 5ms
+2023-04-15 16:51:51.468 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 16:52:05.601 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:52:48.529 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :552  [32m        [0;39m Current renewal threshold is : 10
+2023-04-15 16:52:51.470 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 1ms
+2023-04-15 16:53:51.478 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 8ms
+2023-04-15 16:54:51.488 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 10ms
+2023-04-15 16:55:05.653 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:790  [32m        [0;39m No remote registry available for the remote region us-east-1
+2023-04-15 16:55:51.360 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/LAPTOP-DPE4UH7M:api-business:9002 with status DOWN (replication=false)
+2023-04-15 16:55:51.489 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1247 [32m        [0;39m Running the evict task with compensationTime 0ms
+2023-04-15 16:55:51.506 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=false)
+2023-04-15 16:55:51.733 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application DOUDING-EUREKA with eureka with status DOWN
+2023-04-15 16:55:51.895 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-BUSINESS/LAPTOP-DPE4UH7M:api-business:9002 with status DOWN (replication=true)
+2023-04-15 16:55:51.896 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-FILE/LAPTOP-DPE4UH7M:api-file:9003 with status DOWN (replication=true)
+2023-04-15 16:55:51.956 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status DOWN (replication=false)
+2023-04-15 16:55:52.217 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status DOWN (replication=false)
+2023-04-15 16:55:52.482 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance API-SYSTEM/LAPTOP-DPE4UH7M:api-system:9001 with status DOWN (replication=true)
+2023-04-15 16:55:52.483 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance DOUDING-CONFIG/localhost:douding-config:8888 with status DOWN (replication=true)
+2023-04-15 16:55:53.002 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :83   [32m        [0;39m Shutting down Eureka Server..
+2023-04-15 16:55:53.038 INFO  com.netflix.eureka.DefaultEurekaServerContext     :79   [32m        [0;39m Shutting down ...
+2023-04-15 16:55:53.057 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2023-04-15 16:55:53.070 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2023-04-15 16:55:53.072 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2023-04-15 16:55:53.074 INFO  com.netflix.servo.monitor.StatsMonitor            :426  [32m        [0;39m Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2023-04-15 16:55:53.167 INFO  com.netflix.eureka.DefaultEurekaServerContext     :84   [32m        [0;39m Shut down
+2023-04-15 16:55:53.167 INFO  o.s.c.netflix.eureka.server.EurekaServerBootstrap :93   [32m        [0;39m Eureka Service is now shutdown...
+2023-04-15 16:55:53.171 INFO  com.netflix.eureka.DefaultEurekaServerContext     :79   [32m        [0;39m Shutting down ...
+2023-04-15 16:55:53.183 INFO  com.netflix.eureka.DefaultEurekaServerContext     :84   [32m        [0;39m Shut down
+2023-04-15 16:55:53.226 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-15 16:55:53.234 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient

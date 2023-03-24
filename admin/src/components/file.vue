@@ -65,13 +65,12 @@ export default {
             formData.append("file",file);
             formData.append("use",_this.use);//文件分类 (课程图,讲师头像)
             Loading.show();
-            // let url = "/file/admin/upload"
-            let url = "/file/admin/oss-simple"
+             let url = "/file/admin/upload"
+            //let url = "/file/admin/oss-simple"
             _this.$ajax.post(url,formData).then((response)=>{
                 Loading.hide();
                 let image = response.data.content;
                 console.log(image);
-
                 _this.afterUpload(response.data)
                 // _this.teacher.image = image;
                 //解决连续选相同文件 onchange 后续不被触发的bug

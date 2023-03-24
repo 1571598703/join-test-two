@@ -66,6 +66,7 @@
   <sql id="Base_Column_List">
     id, `name`
   </sql>
+
   <select id="selectByExample" parameterType="com.douding.server.domain.TestExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

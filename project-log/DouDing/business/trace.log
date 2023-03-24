@@ -1,0 +1,664 @@
+2023-04-16 13:07:05.417 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-16 13:07:05.466 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-16 13:07:07.783 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-16 13:07:07.915 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :248  [32m        [0;39m Connect Timeout Exception on Url - http://domain-config:8888/. Will be trying the next url if available
+2023-04-16 13:07:07.950 ERROR org.springframework.boot.SpringApplication        :843  [32m        [0;39m Application run failed
+java.lang.IllegalStateException: Could not locate PropertySource and the fail fast property is set, failing
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:133)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:51)
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locateCollection(ConfigServicePropertySourceLocator.java:145)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:95)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:634)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:403)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at com.douding.business.config.BusinessApplication.main(BusinessApplication.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://domain-config:8888/api-business/dev/dev": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.getRemoteEnvironment(ConfigServicePropertySourceLocator.java:240)
+	at org.springframework.cloud.config.client.ConfigServicePropertySourceLocator.locate(ConfigServicePropertySourceLocator.java:94)
+	... 12 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:508)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:375)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:396)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1253)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1015)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 16 common frames omitted
+2023-04-16 13:07:59.667 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-16 13:07:59.698 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-16 13:08:02.008 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-16 13:08:02.474 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :150  [32m        [0;39m Located environment: name=api-business, profiles=[dev], label=dev, version=null, state=null
+2023-04-16 13:08:02.476 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :109  [32m        [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-class path resource [config/dev/api-business-dev.yml]'}]
+2023-04-16 13:08:02.519 INFO  com.douding.business.config.BusinessApplication   :663  [32m        [0;39m The following profiles are active: dev
+2023-04-16 13:08:06.441 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-16 13:08:06.449 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-16 13:08:06.505 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m        [0;39m Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-04-16 13:08:06.968 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=7be24326-4332-3bb5-a1d8-ecf291a65c9c
+2023-04-16 13:08:08.483 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2023-04-16 13:08:08.502 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2023-04-16 13:08:08.503 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-16 13:08:08.503 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-16 13:08:08.675 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-16 13:08:08.676 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 6124 ms
+2023-04-16 13:08:12.834 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2023-04-16 13:08:14.508 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-16 13:08:14.573 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:68   [32m        [0;39m Eureka HTTP Client uses RestTemplate.
+2023-04-16 13:08:16.164 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-16 13:08:16.262 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-16 13:08:16.413 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-16 13:08:16.460 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-16 13:08:16.463 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:08:16.481 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-16 13:08:16.482 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-16 13:08:16.482 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-16 13:08:16.482 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-16 13:08:16.482 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-16 13:08:16.482 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: true
+2023-04-16 13:08:16.483 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-16 13:08:16.762 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-16 13:08:16.765 INFO  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2023-04-16 13:08:16.767 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-16 13:08:16.773 INFO  com.netflix.discovery.DiscoveryClient             :492  [32m        [0;39m Discovery Client initialized at timestamp 1681621696772 with initial instances count: 1
+2023-04-16 13:08:16.780 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application API-BUSINESS with eureka with status UP
+2023-04-16 13:08:16.781 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681621696781, current=UP, previous=STARTING]
+2023-04-16 13:08:16.783 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002: registering service...
+2023-04-16 13:08:16.784 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2023-04-16 13:08:16.810 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path ''
+2023-04-16 13:08:16.811 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 9002
+2023-04-16 13:08:16.844 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002 - registration status: 204
+2023-04-16 13:08:18.194 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-16 13:08:18.220 INFO  com.douding.business.config.BusinessApplication   :61   [32m        [0;39m Started BusinessApplication in 20.625 seconds (JVM running for 22.237)
+2023-04-16 13:08:18.224 INFO  com.douding.business.config.BusinessApplication   :24   [32m        [0;39m 启动成功！！
+2023-04-16 13:08:18.225 INFO  com.douding.business.config.BusinessApplication   :25   [32m        [0;39m Business: 	http://127.0.0.1:9002
+2023-04-16 13:09:31.724 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-16 13:09:31.724 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-16 13:09:31.726 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 1 ms
+2023-04-16 13:09:31.764 INFO  com.douding.server.config.LogAspect               :76   [32mQcf3iNDb[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 13:09:31.765 INFO  com.douding.server.config.LogAspect               :77   [32mQcf3iNDb[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 13:09:31.765 INFO  com.douding.server.config.LogAspect               :78   [32mQcf3iNDb[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 13:09:31.765 INFO  com.douding.server.config.LogAspect               :79   [32mQcf3iNDb[0;39m 远程地址: 127.0.0.1
+2023-04-16 13:09:31.835 INFO  com.douding.server.config.LogAspect               :97   [32mQcf3iNDb[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 13:09:31.866 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mQcf3iNDb[0;39m HikariPool-1 - Starting...
+2023-04-16 13:09:31.994 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mQcf3iNDb[0;39m HikariPool-1 - Start completed.
+2023-04-16 13:09:32.036 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mQcf3iNDb[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 13:09:32.064 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mQcf3iNDb[0;39m ==> Parameters: 
+2023-04-16 13:09:32.086 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mQcf3iNDb[0;39m <==    Columns: count(0)
+2023-04-16 13:09:32.086 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mQcf3iNDb[0;39m <==        Row: 5
+2023-04-16 13:09:32.088 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mQcf3iNDb[0;39m <==      Total: 1
+2023-04-16 13:09:32.092 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mQcf3iNDb[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 13:09:32.092 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mQcf3iNDb[0;39m ==> Parameters: 5(Integer)
+2023-04-16 13:09:32.094 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mQcf3iNDb[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 13:09:32.094 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mQcf3iNDb[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 13:09:32.095 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mQcf3iNDb[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 13:09:32.095 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mQcf3iNDb[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 13:09:32.096 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mQcf3iNDb[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 13:09:32.096 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mQcf3iNDb[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 13:09:32.097 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mQcf3iNDb[0;39m <==      Total: 5
+2023-04-16 13:09:32.111 INFO  com.douding.server.config.LogAspect               :109  [32mQcf3iNDb[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 13:09:32.111 INFO  com.douding.server.config.LogAspect               :110  [32mQcf3iNDb[0;39m ------------- 结束 耗时：351 ms -------------
+2023-04-16 13:13:16.495 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:18:16.507 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:23:16.530 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:26:10.717 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application API-BUSINESS with eureka with status DOWN
+2023-04-16 13:26:10.717 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681622770717, current=DOWN, previous=UP]
+2023-04-16 13:26:10.719 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002: registering service...
+2023-04-16 13:26:10.741 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002 - registration status: 204
+2023-04-16 13:26:11.383 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-16 13:26:11.417 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
+2023-04-16 13:26:11.420 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-16 13:26:14.439 INFO  com.netflix.discovery.DiscoveryClient             :971  [32m        [0;39m Unregistering ...
+2023-04-16 13:26:14.497 INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :93   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://domain-eureka:8761/eureka/} exception=I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-BUSINESS/localhost:api-business:9002": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-BUSINESS/localhost:api-business:9002": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 39 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2023-04-16 13:26:14.501 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-BUSINESS/localhost:api-business:9002": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+2023-04-16 13:26:14.540 INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :84   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://domain-eureka:8761/eureka/}, exception=I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-BUSINESS/localhost:api-business:9002": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-BUSINESS/localhost:api-business:9002": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2023-04-16 13:26:14.542 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-BUSINESS/localhost:api-business:9002": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+2023-04-16 13:26:14.563 ERROR com.netflix.discovery.DiscoveryClient             :975  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-04-16 13:26:14.602 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
+2023-04-16 13:28:43.582 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-16 13:28:43.622 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-16 13:28:45.879 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-16 13:28:46.327 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :150  [32m        [0;39m Located environment: name=api-business, profiles=[dev], label=dev, version=null, state=null
+2023-04-16 13:28:46.329 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :109  [32m        [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-class path resource [config/dev/api-business-dev.yml]'}]
+2023-04-16 13:28:46.367 INFO  com.douding.business.config.BusinessApplication   :663  [32m        [0;39m The following profiles are active: dev
+2023-04-16 13:28:48.203 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-16 13:28:48.209 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-16 13:28:48.252 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m        [0;39m Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-04-16 13:28:48.836 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=7be24326-4332-3bb5-a1d8-ecf291a65c9c
+2023-04-16 13:28:50.053 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2023-04-16 13:28:50.064 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2023-04-16 13:28:50.064 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-16 13:28:50.065 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-16 13:28:50.193 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-16 13:28:50.194 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 3772 ms
+2023-04-16 13:28:53.065 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2023-04-16 13:28:54.512 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-16 13:28:54.756 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:68   [32m        [0;39m Eureka HTTP Client uses RestTemplate.
+2023-04-16 13:28:56.389 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-16 13:28:56.487 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-16 13:28:56.567 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-16 13:28:56.601 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-16 13:28:56.605 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:28:56.624 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-16 13:28:56.625 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-16 13:28:56.625 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-16 13:28:56.625 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-16 13:28:56.625 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-16 13:28:56.626 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: true
+2023-04-16 13:28:56.626 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-16 13:28:56.830 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-16 13:28:56.833 INFO  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2023-04-16 13:28:56.835 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-16 13:28:56.840 INFO  com.netflix.discovery.DiscoveryClient             :492  [32m        [0;39m Discovery Client initialized at timestamp 1681622936839 with initial instances count: 1
+2023-04-16 13:28:56.847 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application API-BUSINESS with eureka with status UP
+2023-04-16 13:28:56.848 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681622936848, current=UP, previous=STARTING]
+2023-04-16 13:28:56.850 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002: registering service...
+2023-04-16 13:28:56.852 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2023-04-16 13:28:56.878 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path ''
+2023-04-16 13:28:56.879 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 9002
+2023-04-16 13:28:56.896 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-BUSINESS/localhost:api-business:9002 - registration status: 204
+2023-04-16 13:28:58.385 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-16 13:28:58.413 INFO  com.douding.business.config.BusinessApplication   :61   [32m        [0;39m Started BusinessApplication in 17.257 seconds (JVM running for 19.671)
+2023-04-16 13:28:58.422 INFO  com.douding.business.config.BusinessApplication   :24   [32m        [0;39m 启动成功！！
+2023-04-16 13:28:58.423 INFO  com.douding.business.config.BusinessApplication   :25   [32m        [0;39m Business: 	http://127.0.0.1:9002
+2023-04-16 13:33:56.630 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:38:56.638 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:43:56.648 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:48:56.654 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:52:07.067 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-16 13:52:07.068 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-16 13:52:07.142 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 73 ms
+2023-04-16 13:52:07.479 INFO  com.douding.server.config.LogAspect               :76   [32mDN6Px7Pf[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 13:52:07.489 INFO  com.douding.server.config.LogAspect               :77   [32mDN6Px7Pf[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 13:52:07.492 INFO  com.douding.server.config.LogAspect               :78   [32mDN6Px7Pf[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 13:52:07.494 INFO  com.douding.server.config.LogAspect               :79   [32mDN6Px7Pf[0;39m 远程地址: 127.0.0.1
+2023-04-16 13:52:07.742 INFO  com.douding.server.config.LogAspect               :97   [32mDN6Px7Pf[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 13:52:07.969 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mDN6Px7Pf[0;39m HikariPool-1 - Starting...
+2023-04-16 13:52:08.664 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mDN6Px7Pf[0;39m HikariPool-1 - Start completed.
+2023-04-16 13:52:08.874 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mDN6Px7Pf[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 13:52:09.002 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mDN6Px7Pf[0;39m ==> Parameters: 
+2023-04-16 13:52:09.119 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mDN6Px7Pf[0;39m <==    Columns: count(0)
+2023-04-16 13:52:09.120 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mDN6Px7Pf[0;39m <==        Row: 5
+2023-04-16 13:52:09.133 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mDN6Px7Pf[0;39m <==      Total: 1
+2023-04-16 13:52:09.145 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mDN6Px7Pf[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 13:52:09.147 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mDN6Px7Pf[0;39m ==> Parameters: 5(Integer)
+2023-04-16 13:52:09.153 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mDN6Px7Pf[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 13:52:09.156 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mDN6Px7Pf[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 13:52:09.161 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mDN6Px7Pf[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 13:52:09.164 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mDN6Px7Pf[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 13:52:09.171 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mDN6Px7Pf[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 13:52:09.174 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mDN6Px7Pf[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 13:52:09.175 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mDN6Px7Pf[0;39m <==      Total: 5
+2023-04-16 13:52:09.227 INFO  com.douding.server.config.LogAspect               :109  [32mDN6Px7Pf[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 13:52:09.229 INFO  com.douding.server.config.LogAspect               :110  [32mDN6Px7Pf[0;39m ------------- 结束 耗时：1789 ms -------------
+2023-04-16 13:53:56.662 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 13:58:56.675 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:02:53.883 INFO  com.douding.server.config.LogAspect               :76   [32mCWpyNSpS[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:02:53.884 INFO  com.douding.server.config.LogAspect               :77   [32mCWpyNSpS[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:02:53.884 INFO  com.douding.server.config.LogAspect               :78   [32mCWpyNSpS[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:02:53.884 INFO  com.douding.server.config.LogAspect               :79   [32mCWpyNSpS[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:02:53.884 INFO  com.douding.server.config.LogAspect               :97   [32mCWpyNSpS[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:02:53.886 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mCWpyNSpS[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:02:53.887 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mCWpyNSpS[0;39m ==> Parameters: 
+2023-04-16 14:02:53.888 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mCWpyNSpS[0;39m <==    Columns: count(0)
+2023-04-16 14:02:53.888 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mCWpyNSpS[0;39m <==        Row: 5
+2023-04-16 14:02:53.888 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mCWpyNSpS[0;39m <==      Total: 1
+2023-04-16 14:02:53.888 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mCWpyNSpS[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:02:53.889 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mCWpyNSpS[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:02:53.890 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mCWpyNSpS[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:02:53.890 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mCWpyNSpS[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:02:53.890 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mCWpyNSpS[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:02:53.891 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mCWpyNSpS[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:02:53.891 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mCWpyNSpS[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:02:53.891 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mCWpyNSpS[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:02:53.893 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mCWpyNSpS[0;39m <==      Total: 5
+2023-04-16 14:02:53.894 INFO  com.douding.server.config.LogAspect               :109  [32mCWpyNSpS[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:02:53.894 INFO  com.douding.server.config.LogAspect               :110  [32mCWpyNSpS[0;39m ------------- 结束 耗时：11 ms -------------
+2023-04-16 14:03:49.922 INFO  com.douding.server.config.LogAspect               :76   [32mBHcTFZem[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:03:49.922 INFO  com.douding.server.config.LogAspect               :77   [32mBHcTFZem[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:03:49.923 INFO  com.douding.server.config.LogAspect               :78   [32mBHcTFZem[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:03:49.923 INFO  com.douding.server.config.LogAspect               :79   [32mBHcTFZem[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:03:49.923 INFO  com.douding.server.config.LogAspect               :97   [32mBHcTFZem[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:03:49.926 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mBHcTFZem[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:03:49.926 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mBHcTFZem[0;39m ==> Parameters: 
+2023-04-16 14:03:49.928 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mBHcTFZem[0;39m <==    Columns: count(0)
+2023-04-16 14:03:49.929 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mBHcTFZem[0;39m <==        Row: 5
+2023-04-16 14:03:49.929 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mBHcTFZem[0;39m <==      Total: 1
+2023-04-16 14:03:49.931 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mBHcTFZem[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:03:49.932 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mBHcTFZem[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:03:49.934 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mBHcTFZem[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:03:49.935 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mBHcTFZem[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:03:49.935 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mBHcTFZem[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:03:49.936 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mBHcTFZem[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:03:49.936 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mBHcTFZem[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:03:49.937 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mBHcTFZem[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:03:49.940 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mBHcTFZem[0;39m <==      Total: 5
+2023-04-16 14:03:49.949 INFO  com.douding.server.config.LogAspect               :109  [32mBHcTFZem[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:03:49.952 INFO  com.douding.server.config.LogAspect               :110  [32mBHcTFZem[0;39m ------------- 结束 耗时：30 ms -------------
+2023-04-16 14:03:56.684 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:08:28.715 INFO  com.douding.server.config.LogAspect               :76   [32mmmizd1KL[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:08:28.715 INFO  com.douding.server.config.LogAspect               :77   [32mmmizd1KL[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:08:28.716 INFO  com.douding.server.config.LogAspect               :78   [32mmmizd1KL[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:08:28.716 INFO  com.douding.server.config.LogAspect               :79   [32mmmizd1KL[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:08:28.717 INFO  com.douding.server.config.LogAspect               :97   [32mmmizd1KL[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:08:28.753 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mmmizd1KL[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:08:28.758 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mmmizd1KL[0;39m ==> Parameters: 
+2023-04-16 14:08:28.762 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mmmizd1KL[0;39m <==    Columns: count(0)
+2023-04-16 14:08:28.763 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mmmizd1KL[0;39m <==        Row: 5
+2023-04-16 14:08:28.764 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mmmizd1KL[0;39m <==      Total: 1
+2023-04-16 14:08:28.764 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mmmizd1KL[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:08:28.765 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mmmizd1KL[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:08:28.770 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mmmizd1KL[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:08:28.771 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mmmizd1KL[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:08:28.780 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mmmizd1KL[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:08:28.781 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mmmizd1KL[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:08:28.782 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mmmizd1KL[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:08:28.784 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mmmizd1KL[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:08:28.787 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mmmizd1KL[0;39m <==      Total: 5
+2023-04-16 14:08:28.801 INFO  com.douding.server.config.LogAspect               :109  [32mmmizd1KL[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:08:28.801 INFO  com.douding.server.config.LogAspect               :110  [32mmmizd1KL[0;39m ------------- 结束 耗时：87 ms -------------
+2023-04-16 14:08:56.696 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:13:56.710 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:15:36.646 INFO  com.douding.server.config.LogAspect               :76   [32mjbsnfZrU[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:15:36.647 INFO  com.douding.server.config.LogAspect               :77   [32mjbsnfZrU[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:15:36.648 INFO  com.douding.server.config.LogAspect               :78   [32mjbsnfZrU[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:15:36.649 INFO  com.douding.server.config.LogAspect               :79   [32mjbsnfZrU[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:15:36.650 INFO  com.douding.server.config.LogAspect               :97   [32mjbsnfZrU[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:15:36.653 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mjbsnfZrU[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:15:36.655 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mjbsnfZrU[0;39m ==> Parameters: 
+2023-04-16 14:15:36.657 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mjbsnfZrU[0;39m <==    Columns: count(0)
+2023-04-16 14:15:36.658 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mjbsnfZrU[0;39m <==        Row: 5
+2023-04-16 14:15:36.658 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mjbsnfZrU[0;39m <==      Total: 1
+2023-04-16 14:15:36.660 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mjbsnfZrU[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:15:36.660 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mjbsnfZrU[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:15:36.662 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjbsnfZrU[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:15:36.663 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjbsnfZrU[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:15:36.663 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjbsnfZrU[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:15:36.664 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjbsnfZrU[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:15:36.664 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjbsnfZrU[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:15:36.664 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjbsnfZrU[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:15:36.665 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mjbsnfZrU[0;39m <==      Total: 5
+2023-04-16 14:15:36.666 INFO  com.douding.server.config.LogAspect               :109  [32mjbsnfZrU[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:15:36.666 INFO  com.douding.server.config.LogAspect               :110  [32mjbsnfZrU[0;39m ------------- 结束 耗时：20 ms -------------
+2023-04-16 14:16:10.291 INFO  com.douding.server.config.LogAspect               :76   [32mPyIkQ6V1[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:16:10.292 INFO  com.douding.server.config.LogAspect               :77   [32mPyIkQ6V1[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:16:10.292 INFO  com.douding.server.config.LogAspect               :78   [32mPyIkQ6V1[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:16:10.292 INFO  com.douding.server.config.LogAspect               :79   [32mPyIkQ6V1[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:16:10.292 INFO  com.douding.server.config.LogAspect               :97   [32mPyIkQ6V1[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:16:10.294 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mPyIkQ6V1[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:16:10.294 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mPyIkQ6V1[0;39m ==> Parameters: 
+2023-04-16 14:16:10.295 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mPyIkQ6V1[0;39m <==    Columns: count(0)
+2023-04-16 14:16:10.296 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mPyIkQ6V1[0;39m <==        Row: 5
+2023-04-16 14:16:10.296 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mPyIkQ6V1[0;39m <==      Total: 1
+2023-04-16 14:16:10.296 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mPyIkQ6V1[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:16:10.297 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mPyIkQ6V1[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:16:10.299 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mPyIkQ6V1[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:16:10.300 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mPyIkQ6V1[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:16:10.300 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mPyIkQ6V1[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:16:10.300 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mPyIkQ6V1[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:16:10.301 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mPyIkQ6V1[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:16:10.301 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mPyIkQ6V1[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:16:10.301 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mPyIkQ6V1[0;39m <==      Total: 5
+2023-04-16 14:16:10.305 INFO  com.douding.server.config.LogAspect               :109  [32mPyIkQ6V1[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:16:10.306 INFO  com.douding.server.config.LogAspect               :110  [32mPyIkQ6V1[0;39m ------------- 结束 耗时：15 ms -------------
+2023-04-16 14:16:32.486 INFO  com.douding.server.config.LogAspect               :76   [32mCpfxnKud[0;39m ------------- 【分类】操作开始 -------------
+2023-04-16 14:16:32.488 INFO  com.douding.server.config.LogAspect               :77   [32mCpfxnKud[0;39m 请求地址: http://localhost:9002/admin/category/all GET
+2023-04-16 14:16:32.490 INFO  com.douding.server.config.LogAspect               :78   [32mCpfxnKud[0;39m 类名方法: com.douding.business.controller.admin.CategoryController.all
+2023-04-16 14:16:32.492 INFO  com.douding.server.config.LogAspect               :79   [32mCpfxnKud[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:16:32.494 INFO  com.douding.server.config.LogAspect               :97   [32mCpfxnKud[0;39m 请求参数: []
+2023-04-16 14:16:32.626 DEBUG c.d.server.mapper.CategoryMapper.selectByExample  :159  [32mCpfxnKud[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc 
+2023-04-16 14:16:32.629 DEBUG c.d.server.mapper.CategoryMapper.selectByExample  :159  [32mCpfxnKud[0;39m ==> Parameters: 
+2023-04-16 14:16:32.662 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==    Columns: id, parent, name, sort
+2023-04-16 14:16:32.663 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000100, 00000000, 前端技术, 100
+2023-04-16 14:16:32.668 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000101, 00000100, html/css, 101
+2023-04-16 14:16:32.673 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000102, 00000100, javascript, 102
+2023-04-16 14:16:32.678 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000103, 00000100, vue.js, 103
+2023-04-16 14:16:32.680 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000104, 00000100, react.js, 104
+2023-04-16 14:16:32.681 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000105, 00000100, angular, 105
+2023-04-16 14:16:32.681 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000106, 00000100, node.js, 106
+2023-04-16 14:16:32.682 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000107, 00000100, jquery, 107
+2023-04-16 14:16:32.683 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000108, 00000100, 小程序, 108
+2023-04-16 14:16:32.684 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000200, 00000000, 后端技术, 200
+2023-04-16 14:16:32.686 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000201, 00000200, java, 201
+2023-04-16 14:16:32.687 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000202, 00000200, springboot, 202
+2023-04-16 14:16:32.688 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000203, 00000200, spring cloud, 203
+2023-04-16 14:16:32.688 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000204, 00000200, ssm, 204
+2023-04-16 14:16:32.690 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000205, 00000200, python, 205
+2023-04-16 14:16:32.691 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000206, 00000200, 爬虫, 206
+2023-04-16 14:16:32.702 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000300, 00000000, 移动开发, 300
+2023-04-16 14:16:32.705 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000301, 00000300, android, 301
+2023-04-16 14:16:32.707 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000302, 00000300, ios, 302
+2023-04-16 14:16:32.708 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000303, 00000300, react native, 303
+2023-04-16 14:16:32.710 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000304, 00000300, ionic, 304
+2023-04-16 14:16:32.710 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000400, 00000000, 前沿技术, 400
+2023-04-16 14:16:32.710 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000401, 00000400, 微服务, 401
+2023-04-16 14:16:32.711 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000402, 00000400, 区块链, 402
+2023-04-16 14:16:32.711 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000403, 00000400, 机器学习, 403
+2023-04-16 14:16:32.712 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000404, 00000400, 深度学习, 404
+2023-04-16 14:16:32.712 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000405, 00000400, 数据分析&挖掘, 405
+2023-04-16 14:16:32.712 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000500, 00000000, 云计算&大数据, 500
+2023-04-16 14:16:32.713 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000501, 00000500, 大数据, 501
+2023-04-16 14:16:32.713 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000502, 00000500, hadoop, 502
+2023-04-16 14:16:32.713 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000503, 00000500, spark, 503
+2023-04-16 14:16:32.714 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000504, 00000500, hbase, 504
+2023-04-16 14:16:32.714 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000505, 00000500, 阿里云, 505
+2023-04-16 14:16:32.714 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000506, 00000500, docker, 506
+2023-04-16 14:16:32.715 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000507, 00000500, kubernetes, 507
+2023-04-16 14:16:32.716 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000600, 00000000, 运维&测试, 600
+2023-04-16 14:16:32.717 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000601, 00000600, 运维, 601
+2023-04-16 14:16:32.717 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000602, 00000600, 自动化运维, 602
+2023-04-16 14:16:32.718 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000603, 00000600, 中间件, 603
+2023-04-16 14:16:32.718 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000604, 00000600, linux, 604
+2023-04-16 14:16:32.719 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000605, 00000600, 测试, 605
+2023-04-16 14:16:32.719 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000606, 00000600, 自动化测试, 606
+2023-04-16 14:16:32.719 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000700, 00000000, 数据库, 700
+2023-04-16 14:16:32.720 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000701, 00000700, mysql, 701
+2023-04-16 14:16:32.720 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000702, 00000700, redis, 702
+2023-04-16 14:16:32.721 TRACE c.d.server.mapper.CategoryMapper.selectByExample  :165  [32mCpfxnKud[0;39m <==        Row: 00000703, 00000700, mongodb, 703
+2023-04-16 14:16:32.721 DEBUG c.d.server.mapper.CategoryMapper.selectByExample  :159  [32mCpfxnKud[0;39m <==      Total: 46
+2023-04-16 14:16:32.761 INFO  com.douding.server.config.LogAspect               :109  [32mCpfxnKud[0;39m 返回结果: {"content":[{"id":"00000100","name":"前端技术","parent":"00000000","sort":100},{"id":"00000101","name":"html/css","parent":"00000100","sort":101},{"id":"00000102","name":"javascript","parent":"00000100","sort":102},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000106","name":"node.js","parent":"00000100","sort":106},{"id":"00000107","name":"jquery","parent":"00000100","sort":107},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"00000200","name":"后端技术","parent":"00000000","sort":200},{"id":"00000201","name":"java","parent":"00000200","sort":201},{"id":"00000202","name":"springboot","parent":"00000200","sort":202},{"id":"00000203","name":"spring cloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"android","parent":"00000300","sort":301},{"id":"00000302","name":"ios","parent":"00000300","sort":302},{"id":"00000303","name":"react native","parent":"00000300","sort":303},{"id":"00000304","name":"ionic","parent":"00000300","sort":304},{"id":"00000400","name":"前沿技术","parent":"00000000","sort":400},{"id":"00000401","name":"微服务","parent":"00000400","sort":401},{"id":"00000402","name":"区块链","parent":"00000400","sort":402},{"id":"00000403","name":"机器学习","parent":"00000400","sort":403},{"id":"00000404","name":"深度学习","parent":"00000400","sort":404},{"id":"00000405","name":"数据分析&挖掘","parent":"00000400","sort":405},{"id":"00000500","name":"云计算&大数据","parent":"00000000","sort":500},{"id":"00000501","name":"大数据","parent":"00000500","sort":501},{"id":"00000502","name":"hadoop","parent":"00000500","sort":502},{"id":"00000503","name":"spark","parent":"00000500","sort":503},{"id":"00000504","name":"hbase","parent":"00000500","sort":504},{"id":"00000505","name":"阿里云","parent":"00000500","sort":505},{"id":"00000506","name":"docker","parent":"00000500","sort":506},{"id":"00000507","name":"kubernetes","parent":"00000500","sort":507},{"id":"00000600","name":"运维&测试","parent":"00000000","sort":600},{"id":"00000601","name":"运维","parent":"00000600","sort":601},{"id":"00000602","name":"自动化运维","parent":"00000600","sort":602},{"id":"00000603","name":"中间件","parent":"00000600","sort":603},{"id":"00000604","name":"linux","parent":"00000600","sort":604},{"id":"00000605","name":"测试","parent":"00000600","sort":605},{"id":"00000606","name":"自动化测试","parent":"00000600","sort":606},{"id":"00000700","name":"数据库","parent":"00000000","sort":700},{"id":"00000701","name":"mysql","parent":"00000700","sort":701},{"id":"00000702","name":"redis","parent":"00000700","sort":702},{"id":"00000703","name":"mongodb","parent":"00000700","sort":703}],"success":true}
+2023-04-16 14:16:32.763 INFO  com.douding.server.config.LogAspect               :110  [32mCpfxnKud[0;39m ------------- 结束 耗时：281 ms -------------
+2023-04-16 14:16:33.903 INFO  com.douding.server.config.LogAspect               :76   [32mOmTw3Rxa[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:16:33.906 INFO  com.douding.server.config.LogAspect               :77   [32mOmTw3Rxa[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:16:33.907 INFO  com.douding.server.config.LogAspect               :78   [32mOmTw3Rxa[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:16:33.907 INFO  com.douding.server.config.LogAspect               :79   [32mOmTw3Rxa[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:16:33.908 INFO  com.douding.server.config.LogAspect               :97   [32mOmTw3Rxa[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:16:33.916 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mOmTw3Rxa[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:16:33.918 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mOmTw3Rxa[0;39m ==> Parameters: 
+2023-04-16 14:16:33.920 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mOmTw3Rxa[0;39m <==    Columns: count(0)
+2023-04-16 14:16:33.921 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mOmTw3Rxa[0;39m <==        Row: 5
+2023-04-16 14:16:33.921 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mOmTw3Rxa[0;39m <==      Total: 1
+2023-04-16 14:16:33.923 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mOmTw3Rxa[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:16:33.923 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mOmTw3Rxa[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:16:33.927 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mOmTw3Rxa[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:16:33.927 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mOmTw3Rxa[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:16:33.928 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mOmTw3Rxa[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:16:33.928 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mOmTw3Rxa[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:16:33.928 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mOmTw3Rxa[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:16:33.929 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mOmTw3Rxa[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:16:33.929 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mOmTw3Rxa[0;39m <==      Total: 5
+2023-04-16 14:16:33.930 INFO  com.douding.server.config.LogAspect               :109  [32mOmTw3Rxa[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:16:33.930 INFO  com.douding.server.config.LogAspect               :110  [32mOmTw3Rxa[0;39m ------------- 结束 耗时：28 ms -------------
+2023-04-16 14:17:17.628 INFO  com.douding.server.config.LogAspect               :76   [32m2PuPsZzo[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:17:17.629 INFO  com.douding.server.config.LogAspect               :77   [32m2PuPsZzo[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:17:17.630 INFO  com.douding.server.config.LogAspect               :78   [32m2PuPsZzo[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:17:17.630 INFO  com.douding.server.config.LogAspect               :79   [32m2PuPsZzo[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:17:17.630 INFO  com.douding.server.config.LogAspect               :97   [32m2PuPsZzo[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:17:17.634 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m2PuPsZzo[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:17:17.643 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m2PuPsZzo[0;39m ==> Parameters: 
+2023-04-16 14:17:17.649 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32m2PuPsZzo[0;39m <==    Columns: count(0)
+2023-04-16 14:17:17.651 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32m2PuPsZzo[0;39m <==        Row: 5
+2023-04-16 14:17:17.653 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m2PuPsZzo[0;39m <==      Total: 1
+2023-04-16 14:17:17.665 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32m2PuPsZzo[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:17:17.668 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32m2PuPsZzo[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:17:17.675 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32m2PuPsZzo[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:17:17.676 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32m2PuPsZzo[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:17:17.680 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32m2PuPsZzo[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:17:17.681 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32m2PuPsZzo[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:17:17.681 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32m2PuPsZzo[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:17:17.682 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32m2PuPsZzo[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:17:17.687 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32m2PuPsZzo[0;39m <==      Total: 5
+2023-04-16 14:17:17.692 INFO  com.douding.server.config.LogAspect               :109  [32m2PuPsZzo[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:17:17.693 INFO  com.douding.server.config.LogAspect               :110  [32m2PuPsZzo[0;39m ------------- 结束 耗时：65 ms -------------
+2023-04-16 14:17:29.362 INFO  com.douding.server.config.LogAspect               :76   [32mjaAkh0qJ[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:17:29.364 INFO  com.douding.server.config.LogAspect               :77   [32mjaAkh0qJ[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:17:29.364 INFO  com.douding.server.config.LogAspect               :78   [32mjaAkh0qJ[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:17:29.364 INFO  com.douding.server.config.LogAspect               :79   [32mjaAkh0qJ[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:17:29.364 INFO  com.douding.server.config.LogAspect               :97   [32mjaAkh0qJ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:17:29.368 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mjaAkh0qJ[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:17:29.369 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mjaAkh0qJ[0;39m ==> Parameters: 
+2023-04-16 14:17:29.383 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mjaAkh0qJ[0;39m <==    Columns: count(0)
+2023-04-16 14:17:29.385 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mjaAkh0qJ[0;39m <==        Row: 5
+2023-04-16 14:17:29.385 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mjaAkh0qJ[0;39m <==      Total: 1
+2023-04-16 14:17:29.387 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mjaAkh0qJ[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:17:29.387 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mjaAkh0qJ[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:17:29.401 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjaAkh0qJ[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:17:29.402 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjaAkh0qJ[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:17:29.403 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjaAkh0qJ[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:17:29.403 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjaAkh0qJ[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:17:29.403 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjaAkh0qJ[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:17:29.404 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mjaAkh0qJ[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:17:29.404 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mjaAkh0qJ[0;39m <==      Total: 5
+2023-04-16 14:17:29.405 INFO  com.douding.server.config.LogAspect               :109  [32mjaAkh0qJ[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:17:29.405 INFO  com.douding.server.config.LogAspect               :110  [32mjaAkh0qJ[0;39m ------------- 结束 耗时：43 ms -------------
+2023-04-16 14:18:56.716 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:23:56.717 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:24:35.987 INFO  com.douding.server.config.LogAspect               :76   [32mpvZt5TCw[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:24:35.988 INFO  com.douding.server.config.LogAspect               :77   [32mpvZt5TCw[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:24:35.988 INFO  com.douding.server.config.LogAspect               :78   [32mpvZt5TCw[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:24:35.989 INFO  com.douding.server.config.LogAspect               :79   [32mpvZt5TCw[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:24:35.989 INFO  com.douding.server.config.LogAspect               :97   [32mpvZt5TCw[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:24:35.993 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mpvZt5TCw[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:24:35.993 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mpvZt5TCw[0;39m ==> Parameters: 
+2023-04-16 14:24:35.998 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mpvZt5TCw[0;39m <==    Columns: count(0)
+2023-04-16 14:24:35.998 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mpvZt5TCw[0;39m <==        Row: 5
+2023-04-16 14:24:36.000 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mpvZt5TCw[0;39m <==      Total: 1
+2023-04-16 14:24:36.004 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mpvZt5TCw[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:24:36.006 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mpvZt5TCw[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:24:36.009 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mpvZt5TCw[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:24:36.010 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mpvZt5TCw[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:24:36.010 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mpvZt5TCw[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:24:36.010 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mpvZt5TCw[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:24:36.011 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mpvZt5TCw[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:24:36.011 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mpvZt5TCw[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:24:36.011 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mpvZt5TCw[0;39m <==      Total: 5
+2023-04-16 14:24:36.012 INFO  com.douding.server.config.LogAspect               :109  [32mpvZt5TCw[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:24:36.012 INFO  com.douding.server.config.LogAspect               :110  [32mpvZt5TCw[0;39m ------------- 结束 耗时：25 ms -------------
+2023-04-16 14:24:38.830 INFO  com.douding.server.config.LogAspect               :76   [32mGwXcxGMP[0;39m ------------- 【讲师】查询开始 -------------
+2023-04-16 14:24:38.830 INFO  com.douding.server.config.LogAspect               :77   [32mGwXcxGMP[0;39m 请求地址: http://localhost:9002/admin/teacher/list GET
+2023-04-16 14:24:38.830 INFO  com.douding.server.config.LogAspect               :78   [32mGwXcxGMP[0;39m 类名方法: com.douding.business.controller.admin.TeacherController.list
+2023-04-16 14:24:38.831 INFO  com.douding.server.config.LogAspect               :79   [32mGwXcxGMP[0;39m 远程地址: 127.0.0.1
+2023-04-16 14:24:38.831 INFO  com.douding.server.config.LogAspect               :97   [32mGwXcxGMP[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2023-04-16 14:24:38.837 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mGwXcxGMP[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2023-04-16 14:24:38.840 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mGwXcxGMP[0;39m ==> Parameters: 
+2023-04-16 14:24:38.845 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mGwXcxGMP[0;39m <==    Columns: count(0)
+2023-04-16 14:24:38.847 TRACE c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mGwXcxGMP[0;39m <==        Row: 5
+2023-04-16 14:24:38.848 DEBUG c.d.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mGwXcxGMP[0;39m <==      Total: 1
+2023-04-16 14:24:38.850 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mGwXcxGMP[0;39m ==>  Preparing: select id, 'name', `nickname`, `image`, position, motto,intro from teacher LIMIT ? 
+2023-04-16 14:24:38.852 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mGwXcxGMP[0;39m ==> Parameters: 5(Integer)
+2023-04-16 14:24:38.884 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mGwXcxGMP[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2023-04-16 14:24:38.885 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mGwXcxGMP[0;39m <==        Row: 5vkSWyOp, name, jeffy, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png, 阿里p7大佬, 拼搏努力,赢得人生精彩, 吉林大学
+2023-04-16 14:24:38.886 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mGwXcxGMP[0;39m <==        Row: I4IzEnVI, name, 金牌, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png, 清华计算机硕士, 加油加油, 加油加油
+2023-04-16 14:24:38.887 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mGwXcxGMP[0;39m <==        Row: KU5kizJz, name, jackzhang, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png, 清华计算教授, 陈宫, 陈宫
+2023-04-16 14:24:38.888 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mGwXcxGMP[0;39m <==        Row: WhUmzll8, name, 柱子, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png, 高级讲师, 完胜, 完胜
+2023-04-16 14:24:38.888 TRACE c.d.server.mapper.TeacherMapper.selectByExample   :165  [32mGwXcxGMP[0;39m <==        Row: zxJ2ebX9, name, jj, https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png, 终极讲师, 坚持就是胜利, 清华大学
+2023-04-16 14:24:38.888 DEBUG c.d.server.mapper.TeacherMapper.selectByExample   :159  [32mGwXcxGMP[0;39m <==      Total: 5
+2023-04-16 14:24:38.891 INFO  com.douding.server.config.LogAspect               :109  [32mGwXcxGMP[0;39m 返回结果: {"content":{"list":[{"id":"5vkSWyOp","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7Ds5xR5i7KC8u0UOCGqYw4.png","intro":"吉林大学","motto":"拼搏努力,赢得人生精彩","name":"name","nickname":"jeffy","position":"阿里p7大佬"},{"id":"I4IzEnVI","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/35t1Ye22I8q8gUWQG4OiI.png","intro":"加油加油","motto":"加油加油","name":"name","nickname":"金牌","position":"清华计算机硕士"},{"id":"KU5kizJz","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/7ggwV8hOoWEUaCUCei44S.png","intro":"陈宫","motto":"陈宫","name":"name","nickname":"jackzhang","position":"清华计算教授"},{"id":"WhUmzll8","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/1AAsybGY20oWGg64cGO0ya.png","intro":"完胜","motto":"完胜","name":"name","nickname":"柱子","position":"高级讲师"},{"id":"zxJ2ebX9","image":"https://douding-course.oss-cn-beijing.aliyuncs.com/teacher/4MUPL5gwYwWEQmqSgigieq.png","intro":"清华大学","motto":"坚持就是胜利","name":"name","nickname":"jj","position":"终极讲师"}],"page":1,"size":5,"total":5},"success":true}
+2023-04-16 14:24:38.891 INFO  com.douding.server.config.LogAspect               :110  [32mGwXcxGMP[0;39m ------------- 结束 耗时：62 ms -------------
+2023-04-16 14:28:56.733 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:33:56.735 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:38:56.744 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:43:56.751 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:48:56.760 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:53:56.774 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-16 14:58:56.787 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration

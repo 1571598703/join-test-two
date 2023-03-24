@@ -70,21 +70,48 @@
   </sql>
   <sql id="Base_Column_List">
 
+    id, 'name', `nickname`, `image`, position, motto,intro
   </sql>
   <select id="selectByExample" parameterType="com.douding.server.domain.TeacherExample" resultMap="BaseResultMap">
 
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from teacher
+
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
 
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
 
+    delete from teacher
+    where id = #{id,jdbcType=CHAR}
   </delete>
   <delete id="deleteByExample" parameterType="com.douding.server.domain.TeacherExample">
+    delete
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from teacher
+
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
 
   </delete>
   <insert id="insert" parameterType="com.douding.server.domain.Teacher">
-
+    insert into teacher ( id, 'name', `nickname`, `image`, position, motto,intro
+      )
+    values (#{id}, #{name}, #{nickname},
+      #{position}, #{motto}, #{intro}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.douding.server.domain.Teacher">
 
@@ -97,8 +124,35 @@
   </update>
   <update id="updateByExample" parameterType="map">
 
+
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.douding.server.domain.Teacher">
+    update teacher
+    <set>
+      <if test="id != null">
+        id = #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=CHAR},
+      </if>
+      <if test="nickname != null">
+        `nickname` = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="image != null">
+        image = #{image,jdbcType=VARCHAR},
+      </if>
+      <if test="position != null">
+        position = #{position,jdbcType=TIMESTAMP},
+      </if>
+      <if test="motto != null">
+        motto = #{motto,jdbcType=TIMESTAMP},
+      </if>
+      <if test="intro != null">
+        intro = #{intro,jdbcType=TIMESTAMP},
+      </if>
+
+    </set>
+    where id = #{id,jdbcType=CHAR}
 
   </update>
   <update id="updateByPrimaryKey" parameterType="com.douding.server.domain.Teacher">

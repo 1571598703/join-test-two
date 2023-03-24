@@ -22,7 +22,7 @@
             </thead>
 
             <tbody>
-            <tr v-for="file in files">
+            <tr :v-for="file in files">
                             <td>{{file.id}}</td>
                             <td>{{file.path}}</td>
                             <td>{{file.name}}</td>

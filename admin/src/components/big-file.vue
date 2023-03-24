@@ -132,6 +132,7 @@
 
                 let base64 = e.target.result;
                 //给param对象增加一个shard参数
+                // todo 这个参数 里面的值 写进去就可以回写
                 param.shard = base64;
 
                 let url = "/file/admin/file/upload"
@@ -183,7 +184,7 @@
             console.log("请求/file/admin/oss-check/:返回值:response.data"+response.data)
         
             if (resp.success) {
-              let obj = resp.content;
+              let obj = resp.code;
               if (!obj) {
                 param.shardIndex = 1;
                 console.log("没有找到文件记录，从分片1开始上传");
@@ -191,6 +192,7 @@
               } else if (obj.shardIndex === obj.shardTotal) {
                 // 已上传分片 = 分片总数，说明已全部上传完，不需要再上传
                 Toast.success("文件极速秒传成功！");
+                console.log(resp.code)
                 _this.afterUpload(resp);
                 $("#" + _this.inputId + "-input").val("");
               }  else {

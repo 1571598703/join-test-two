@@ -15,7 +15,7 @@
         <pagination ref="pagination" v-bind:list="list" v-bind:itemCount="8"></pagination>
 
         <div class="row">
-        <div v-for="teacher in teachers" class="col-md-3">
+        <div :v-for="teacher in teachers" class="col-md-3">
             <div>
             <span class="profile-picture">
                 <img v-show="!teacher.image" class="editable img-responsive editable-click editable-empty" src="/static/image/teachers/header2.jpeg" v-bind:title="teacher.intro"/>
@@ -83,6 +83,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                
                                 <label class="col-sm-2 control-label">头像</label>
                                 <div class="col-sm-10">
                                     <big-file 
@@ -93,7 +94,9 @@
                                     v-bind:after-upload="afterUpload"></big-file>
                                     <div v-show="teacher.image" class="row">
                                         <div class="col-md-4">
+                                            <!-- 回写 -->
                                             <img v-bind:src="teacher.image" class="img-responsive">
+                                       
                                         </div>
                                     </div>
                                     
@@ -129,7 +132,6 @@
         </div><!-- /.modal -->
     </div>
 </template>
-
 <script>
 
 import Pagination from '../../components/pagination.vue'
@@ -151,6 +153,7 @@ export default {
         //初始为 5条每页
         _this.$refs.pagination.size = 5;
         _this.list(1);//初始化查找第一页数据
+
 
     },
     methods:{
@@ -177,6 +180,7 @@ export default {
                     let result = response.data;
                     //给双向绑定数据赋值
                     _this.teachers = result.content.list;
+                    console.log(this.teachers)
                     //获得数据后渲染分页组件数据
                     _this.$refs.pagination.render(page,result.content.total);
                 }
@@ -246,6 +250,7 @@ export default {
         afterUpload(data){
             let _this = this;
             _this.teacher.image = data.content.path;
+            console.log(data.content.path)
             _this.$forceUpdate();
         }, //end method afterUpload  file.vue组件的回调函数
 

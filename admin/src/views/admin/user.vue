@@ -26,7 +26,7 @@
             </thead>
 
             <tbody>
-            <tr v-for="user in users">
+            <tr :v-for="user in users">
                             <td>{{user.id}}</td>
                             <td>{{user.loginName}}</td>
                             <td>{{user.name}}</td>

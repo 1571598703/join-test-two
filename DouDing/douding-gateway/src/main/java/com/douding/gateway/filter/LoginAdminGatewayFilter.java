@@ -43,6 +43,8 @@ public class LoginAdminGatewayFilter implements GatewayFilter, Ordered {
         //如果是登录 退出,获取验证码的请求 也不需要拦截
         if (path.contains("/system/admin/user/login")
                 || path.contains("/system/admin/user/logout")
+                // 放行
+                || path.contains("/file/admin/file/upload")
                 || path.contains("/system/admin/kaptcha")) {
             LOG.info("不需要控台登录验证的请求：{}", path);
             return chain.filter(exchange);
